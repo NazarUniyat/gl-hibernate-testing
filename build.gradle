@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nazar.uniyat'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
+    implementation 'org.projectlombok:lombok:1.16.16'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.8.Final'
+
+    testCompile group: 'com.h2database', name: 'h2', version: '1.3.148'
+    compile group: 'org.junit.platform', name: 'junit-platform-gradle-plugin', version: '1.2.0'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.1.1'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.1.1'
+
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+}
